@@ -82,16 +82,6 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'zencon_web',
-        'USER': 'zencon',
-        'PASSWORD': 'zencon@123',
-        'HOST': 'localhost',   # Or '127.0.0.1'
-        'PORT': '3306',
-    }
-}
 
 
 # Password validation
