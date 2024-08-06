@@ -1,0 +1,258 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}| Services{% endblock title %}
+{% block css %}
+<style>
+    .hover-underline {
+        position: relative;
+        text-decoration: none;
+    }
+
+    .hover-underline::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #008738;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hover-underline:hover::after {
+        transform: scaleX(1);
+    }
+</style>
+{% endblock css %}
+
+{% block content %}
+<div class="content">
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid px-0 px-lg-4 py-lg-0 wow fadeInLeft" data-wow-delay="0.2s"
+        style="background-image: url('{% static 'media/service-header.png' %}'); background-size: cover; background-position: center; height: 50vh;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-5">
+                    <h1 class="text-white text-center mt-5 wow fadeInRight" data-wow-delay="0.4s">Our Service Offerings
+                    </h1>
+                    <p class="text-white text-center mt-3 wow fadeInDown" data-wow-delay="0.5s">With years of experience
+                        across diverse verticals including
+                        manufacturing, healthcare, <br> retail, and finance, we have the expertise to address the unique
+                        challenges and <br> requirements of each industry. Discover our wide range of services and
+                        experience <br>
+                        firsthand how we can elevate your business to new heights.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+    <!-- Services Start -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="card-body"
+                        style="background-image: url('{% static 'media/ser-1.png' %}'); background-size: cover; height: 300px;">
+                        <h3 class="card-title text-white mt-3">SAP Managed Services, S/4 Implementation</h3>
+                        <p class="card-text text-white mt-2">With our SAP Managed Services and S/4 implementation, we
+                            provide comprehensive support and maintenance, ensuring the smooth operation of your SAP
+                            environment while allowing you to focus on your core business activities. </p>
+                        <a href="#" class="btn btn-light mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="card-body"
+                        style="background-image: url('{% static 'media/ser-2.png' %}'); background-size: cover; height: 300px;">
+                        <h3 class="card-title text-white mt-3">Business Process Automation</h3>
+                        <p class="card-text text-white mt-2">Business Process Automation is at the core of our
+                            offerings, streamlining your operations and improving efficiency. We analyze your existing
+                            processes, identify automation opportunities, & implement intelligent solutions to automate
+                            repetitive tasks, reduce manual errors, and boost productivity.</p>
+                        <a href="#" class="btn btn-light mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="card-body"
+                        style="background-image: url('{% static 'media/ser-3.png' %}'); background-size: cover; height: 300px;">
+                        <h3 class="card-title text-white mt-3">Collaboration Portal</h3>
+                        <p class="card-text text-white mt-2">Our innovative solutions are designed to streamline and
+                            enhance communication and collaboration.
+                            Transform your vendor management capabilities and unlock new levels of productivity with our
+                            Collaboration Portal.</p>
+                        <a href="#" class="btn btn-light mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="card-body"
+                        style="background-image: url('{% static 'media/ser-4.png' %}'); background-size: cover; height: 300px;">
+                        <h3 class="card-title text-white mt-3">GST, E invoice SAP Solutions</h3>
+                        <p class="card-text text-white mt-2">Our GST and E-Invoice SAP Solutions simplify financial
+                            processes and ensure compliance with tax regulations. By seamlessly integrating GST
+                            requirements into your SAP solutions, we streamline electronic invoicing, reducing
+                            complexity and ensuring accurate tax-related operations.</p>
+                        <a href="#" class="btn btn-light mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="card-body"
+                        style="background-image: url('{% static 'media/ser-5.png' %}'); background-size: cover; height: 300px;">
+                        <h3 class="card-title text-white mt-3">Customized ERP</h3>
+                        <p class="card-text text-white mt-2">With customized approach, we ensure that your ERP system
+                            seamlessly integrates with your existing infrastructure and optimizes your business
+                            operations. From design & execution to ongoing support & maintenance, we provide end-to-end
+                            ERP solutions that enhance efficiency, and drive growth.
+                        </p>
+                        <a href="#" class="btn btn-light mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="card-body"
+                        style="background-image: url('{% static 'media/ser-6.png' %}'); background-size: cover; height: 300px;">
+                        <h3 class="card-title text-white mt-3">Document Management</h3>
+                        <p class="card-text text-white mt-2">Document Management helps you efficiently manage your
+                            digital assets & streamline document-centric processes. We implement Document Management
+                            System (DMS) to enable secure storage, retrieval, and version control of critical documents,
+                            enhancing collaboration & ensuring data integrity.</p>
+                        <a href="#" class="btn btn-light mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="card-body"
+                        style="background-image: url('{% static 'media/ser-7.png' %}'); background-size: cover; height: 300px;">
+                        <h3 class="card-title text-white mt-3">Smart Value Chain</h3>
+                        <p class="card-text text-white mt-2">With our Smart Value Chain solutions, we leverage
+                            cutting-edge technologies and industry best practices to optimize your supply chain
+                            processes from start to end. Explore our Smart Value Chain service and experience the
+                            transformative power of optimized supply chain management.</p>
+                        <a href="#" class="btn btn-light mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="card-body"
+                        style="background-image: url('{% static 'media/ser-8.png' %}'); background-size: cover; height: 300px;">
+                        <h3 class="card-title text-white mt-3">Digital Signature</h3>
+                        <p class="card-text text-white mt-2">Zencon Infotech provides secure and efficient digital
+                            signature solutions that enable you to streamline document signing processes and enhance
+                            data integrity.Explore our Digital Signature service and take your document management to
+                            the next level.</p>
+                        <a href="#" class="btn btn-light mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+    <!-- Contact Start -->
+    <div class="container py-5">
+        <div class="container col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 p-5 d-flex justify-content-between align-items-center"
+                style="background: linear-gradient(to right, #101720, #043172, #07172F); border-radius: 15px;">
+                <div class="text-wrap">
+                    <h1 class="text-white">Interested in working with us?</h1>
+                </div>
+                <div class="nav-btn">
+                    <a href="{% url 'contact-page' %}"
+                        class="btn btn-light rounded-pill text-success py-1 ms-3 flex-shrink-0">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- propel start -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <h1 class="text-start mx-auto wow fadeInRight fs-1 fw-bold" data-wow-delay="0.2s"
+                    style="background: linear-gradient(to right, #0A3C83, #3C7DDC); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Propel Your Business into the Future with Zencon</h1>
+                <div class="bullets py-3">
+                    <div class="bullet d-flex align-items-center gap-3">
+                        <img src="{% static 'media/check.png' %}" alt="bullets" class="img-fluid wow fadeInRight"
+                            data-wow-delay="0.2s">
+                        <p class="text-secondary fs-5 mt-3 wow fadeInLeft" data-wow-delay="0.3s">Stay Ahead with Digital
+                            Transformation</p>
+                    </div>
+                    <div class="bullet d-flex align-items-center gap-3">
+                        <img src="{% static 'media/check.png' %}" alt="bullets" class="img-fluid wow fadeInRight"
+                            data-wow-delay="0.2s">
+                        <p class="text-secondary fs-5 mt-3 wow fadeInLeft" data-wow-delay="0.3s">Simplify and Streamline
+                            Business Processes</p>
+                    </div>
+                    <div class="bullet d-flex align-items-center gap-3">
+                        <img src="{% static 'media/check.png' %}" alt="bullets" class="img-fluid wow fadeInRight"
+                            data-wow-delay="0.2s">
+                        <p class="text-secondary fs-5 mt-3 wow fadeInLeft" data-wow-delay="0.3s">Drive Data-Driven
+                            Decision-Making</p>
+                    </div>
+                    <div class="bullet d-flex align-items-center gap-3">
+                        <img src="{% static 'media/check.png' %}" alt="bullets" class="img-fluid wow fadeInRight"
+                            data-wow-delay="0.2s">
+                        <p class="text-secondary fs-5 mt-3 wow fadeInLeft" data-wow-delay="0.3s">Seamless Integration
+                            and Collaboration</p>
+                    </div>
+                    <div class="bullet d-flex align-items-center gap-3">
+                        <img src="{% static 'media/check.png' %}" alt="bullets" class="img-fluid wow fadeInRight"
+                            data-wow-delay="0.2s">
+                        <p class="text-secondary fs-5 mt-3 wow fadeInLeft" data-wow-delay="0.3s">Proactive Support and
+                            Maintenance</p>
+                    </div>
+                    <div class="bullet d-flex align-items-center gap-3">
+                        <img src="{% static 'media/check.png' %}" alt="bullets" class="img-fluid wow fadeInRight"
+                            data-wow-delay="0.2s">
+                        <p class="text-secondary fs-5 mt-3 wow fadeInLeft" data-wow-delay="0.3s">Maximize ROI</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <img src="{% static 'media/propel.png' %}" alt="propel" class="img-fluid wow fadeInDown"
+                    data-wow-delay="0.3s">
+            </div>
+        </div>
+    </div>
+    <!-- propel end -->
+
+    <!-- contact start -->
+    <div class="container position-relative py-5">
+        <img src="{% static 'media/blue-line.png' %}" class="img-fluid w-100 wow fadeInRight" data-wow-delay="0.3s"
+            alt="Background Image">
+        <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <h2 class="text-white fw-bold font-poppins mb-4 wow fadeInLeft" data-wow-delay="0.3s">
+                        Take the first step towards digital <br> transformation with our SAP solutions
+                    </h2>
+                    <p class="text-white font-poppins mb-4 wow fadeInRight" data-wow-delay="0.3s">
+                        Contact us now to learn how SAP can help your business
+                    </p>
+                    <a class="btn btn-success rounded-pill py-2 px-4 px-md-5 wow fadeInLeft" data-wow-delay="0.3s"
+                        href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact end -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-success btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+</div>
+{% endblock content %}
+
+{% block js %}
+
+{% endblock js %}

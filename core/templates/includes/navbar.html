@@ -1,0 +1,105 @@
+{% load static %}
+<style>
+    .hover-underline {
+        position: relative;
+        text-decoration: none;
+    }
+
+    .hover-underline::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #008738;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hover-underline:hover::after {
+        transform: scaleX(1);
+    }
+
+    /* CSS to change background color on hover */
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #008738 !important;
+        color: white !important;
+        /* Optional: Change text color to make it more readable */
+    }
+
+    /* Optional: To change background color when selected (active) */
+    .dropdown-menu .dropdown-item:active {
+        background-color: #008738 !important;
+        color: white !important;
+    }
+</style>
+<!-- Navbar & Hero Start -->
+<div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0"
+    style="background: linear-gradient(to right, #101720, #043172, #07172F);">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="/" class="navbar-brand w-50">
+                <div class="p-0 mt-0 d-flex align-items-center justify-content-start">
+                    <img class="mb-1 ml-2 wow fadeInDown" data-wow-delay="0.2s" src="{% static 'media/z-logo.png' %}"
+                        alt="Logo" style="height: 10%;">
+                    <p class="text-white mt-2 fs-2 font-poppins wow fadeInUp" data-wow-delay="0.2s"
+                        style="letter-spacing: 10px;">ZENCON</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <a href="/" class="nav-item nav-link active text-light hover-underline">Home</a>
+                <a href="{% url 'about-page' %}" class="nav-item nav-link text-light hover-underline">About&nbsp;Us</a>
+                <div class="nav-item dropdown">
+                    <a href="{% url 'services-page' %}" class="nav-link hover-underline">
+                        <span class="text-light dropdown-toggle">Services</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="{% url 'service-sap-page' %}" class="dropdown-item">SAP Managed Services, S/4
+                            Implementation</a>
+                        <a href="team.html" class="dropdown-item">Business Process Automation</a>
+                        <a href="testimonial.html" class="dropdown-item">Collaboration Portal</a>
+                        <a href="FAQ.html" class="dropdown-item">GST, E invoice SAP Solutions</a>
+                        <a href="404.html" class="dropdown-item">Customized ERP</a>
+                        <a href="404.html" class="dropdown-item">Document Management</a>
+                        <a href="404.html" class="dropdown-item">Smart Value Chain</a>
+                        <a href="404.html" class="dropdown-item">Digital Signature</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="{% url 'products-page' %}" class="nav-link hover-underline">
+                        <span class="text-light dropdown-toggle">Products</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="{% url 'digital-sign-page' %}" class="dropdown-item">Digital Signature Tool</a>
+                        <a href="team.html" class="dropdown-item">Collaboration Portals</a>
+                        <a href="testimonial.html" class="dropdown-item">Document Parsing</a>
+                        <a href="FAQ.html" class="dropdown-item">E-WAY Bill Tool</a>
+                        <a href="404.html" class="dropdown-item">Appointment System</a>
+                        <a href="404.html" class="dropdown-item">Attendance System</a>
+                        <a href="404.html" class="dropdown-item">Smart Value Chain</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="{% url 'case-studies-page' %}" class="nav-link hover-underline">
+                        <span class="text-light dropdown-toggle">Case&nbsp;Studies</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="{% url 'case-study-1-page' %}" class="dropdown-item">Case Study 1</a>
+                        <a href="team.html" class="dropdown-item">Case Study 2</a>
+                        <a href="testimonial.html" class="dropdown-item">Case Study 3</a>
+                        <a href="FAQ.html" class="dropdown-item">Case Study 4</a>
+                        <a href="{% url 'page-not-found-page' %}" class="dropdown-item">Page Not Found</a>
+                    </div>
+                </div>
+                <a href="{% url 'faq-page' %}" class="nav-item nav-link active text-light hover-underline">FAQ's</a>
+                <a href="{% url 'contact-page' %}"
+                    class="nav-item nav-link active text-light hover-underline">Contact&nbsp;Us</a>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar & Hero End -->

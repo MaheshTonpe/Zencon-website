@@ -1,0 +1,99 @@
+{% load static %}
+<div class="content">
+    <style>
+        .diagonal-section {
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .diagonal-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #F4F9FF;
+            transform: skew(-29deg) translateX(-50%);
+            z-index: 1;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            height: 100%;
+        }
+
+        .left-content,
+        .right-content {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: start;
+            margin-left: 10%;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container p {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #666666;
+        }
+
+        .container .help h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .container .help a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px 10px 5px 0;
+            background-color: #5ca6f1;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 15px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .container .help a:hover {
+            background-color: #1196c2;
+        }
+    </style>
+
+    <div class="diagonal-section">
+        <div class="content-wrapper">
+            <div class="left-content">
+                <div class="container">
+                    <img src="{% static 'media/404-text.png' %}" alt="404">
+                    <h1>Page Not Found</h1>
+                    <p>Sorry. the page you’re looking for doesn’t exist. <br> Either it was removed, or you
+                        mistyped the link.</p>
+                    <div class="help">
+                        <h3>Go here instead:</h3>
+                        <a href="/">Home</a>
+                        <a href="{% url 'contact-page' %}">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="container">
+                    <img src="{% static 'media/404.png' %}" alt="404">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

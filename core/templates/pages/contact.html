@@ -1,0 +1,254 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}| Contact{% endblock title %}
+{% block css %}
+
+{% endblock css %}
+
+{% block content %}
+<div class="content">
+    <!-- Contact Us Start -->
+    <div class="container-fluid wow fadeInDown position-relative" data-wow-delay="0.2s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 mt-5 pt-5">
+                    <p class="text-secondary font-poppins fs-6 text-uppercase wow fadeInLeft" data-wow-delay="0.3s"
+                        style="letter-spacing: 3px;">Contact Us</p>
+                    <h1 class="text-secondary font-poppins display-5 fw-bold pb-5 wow fadeInLeft" data-wow-delay="0.4s"
+                        style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Get
+                        in Touch</h1>
+                    <div class="data mt-5">
+                        <div class="d-flex align-items-center mb-3 wow fadeInLeft" data-wow-delay="0.5s">
+                            <img src="{% static 'media/visit-us.png' %}" alt="" class="img-fluid me-4">
+                            <h5 class="card-title mb-0 text-wrap font-poppins text-dark">Visit Us</h5>
+                        </div>
+                        <div class="d-flex wow fadeInRight" data-wow-delay="0.6s">
+                            <p class="card-text mb-0 w-75 pl-5 text-wrap font-poppins text-secondary">Customer
+                                satisfaction
+                                is our top priority. We work closely with our clients to understand their unique needs
+                                and provide solutions that align with their business goals.</p>
+                        </div>
+                    </div>
+                    <div class="data mt-5">
+                        <div class="d-flex align-items-center mb-3 wow fadeInLeft" data-wow-delay="0.7s">
+                            <img src="{% static 'media/call-us.png' %}" alt="" class="img-fluid me-4">
+                            <h5 class="card-title mb-0 text-wrap font-poppins text-dark">Call Us</h5>
+                        </div>
+                        <div class="d-flex wow fadeInRight" data-wow-delay="0.8s">
+                            <p class="card-text mb-0 w-75 pl-5 d-flex flex-column text-wrap font-poppins">
+                                <a href="tel:+91 9876543210" class="text-secondary">+91 9876543210</a>
+                                <a href="tel:+91 9876543210" class="text-secondary">+91 9876543210</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="data mt-5">
+                        <div class="d-flex align-items-center mb-3 wow fadeInLeft" data-wow-delay="0.9s">
+                            <img src="{% static 'media/mail-us.png' %}" alt="" class="img-fluid me-4">
+                            <h5 class="card-title mb-0 text-wrap font-poppins text-dark">Mail Us</h5>
+                        </div>
+                        <div class="d-flex wow fadeInRight" data-wow-delay="1s">
+                            <p class="card-text mb-0 w-75 pl-5 text-wrap font-poppins text-secondary">
+                                <a href="mailto:contact@zencon.com" class="text-secondary">contact@zencon.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 p-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="row">
+                        <div
+                            class="col-lg-12 col-md-12 col-sm-12 p-4 d-flex flex-column justify-content-center shadow p-3 mb-5 bg-body">
+                            <form action="#" method="post">
+                                {% csrf_token %}
+                                <div class="mb-3 col-lg-12 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
+                                    <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Enter your full name" required>
+                                </div>
+                                <div class="mb-3 col-lg-12 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="0.4s">
+                                    <label for="email" class="form-label">Email <span
+                                            class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Enter your work email address" required>
+                                </div>
+                                <div class="mb-3 col-lg-12 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.5s">
+                                    <label for="phone" class="form-label">Phone Number <span
+                                            class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <select class="form-select me-3" id="country_code" name="country_code"
+                                            style="max-width: 100px;">
+                                            <option value="+1">🇺🇸 +1</option>
+                                            <option value="+44">🇬🇧 +44</option>
+                                            <option value="+91">🇮🇳 +91</option>
+                                            <!-- Add more country options as needed -->
+                                        </select>
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            placeholder="Enter your phone number" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3 col-lg-12 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="0.7s">
+                                    <label for="company" class="form-label">Company</label>
+                                    <input type="text" class="form-control" id="company" name="company"
+                                        placeholder="Enter your company name">
+                                </div>
+                                <div class="mb-3 col-lg-12 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.9s">
+                                    <label for="country" class="form-label">Country <span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" id="country" name="country" required>
+                                        <option value="" selected disabled>Select country</option>
+                                        <option value="India">India</option>
+                                        <option value="USA">USA</option>
+                                        <option value="UK">UK</option>
+                                        <!-- Add more company options as needed -->
+                                    </select>
+                                </div>
+                                <div class="mb-3 col-lg-12 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="1.1s">
+                                    <label for="message" class="form-label">Message <span
+                                            class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="message" name="message" rows="4"
+                                        placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="btn wow fadeInUp" data-wow-delay="1.2s">
+                                    <button type="submit"
+                                        class="btn btn-success rounded-pill py-2 px-4 px-md-5 ms-2">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="position-absolute top-0 end-0 mt-5">
+        <img src="{% static 'media/captcha.png' %}" alt="" class="img-fluid">
+    </div> -->
+    </div>
+    <!-- Contact Us End -->
+    <!-- Location Start -->
+    <div class="container-fluid py-5 wow fadeInRight" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h1 class="display-6 mb-5 font-poppins fw-bold wow fadeInLeft" data-wow-delay="0.5s"
+                    style="background: linear-gradient(to right, #0A3C83, #3C7DDC); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Find Us On Google Map
+                </h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-12">
+                    <div class="h-100 wow fadeInUp" data-wow-delay="0.5s">
+                        <iframe class="w-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11686.829138536972!2d73.76899093776261!3d18.554848140583214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf1a5f6c9485%3A0xf22a6a8e7a277796!2sZencon%20Infotech%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1722601695756!5m2!1sen!2sin"
+                            style="height: 300px; border-radius: 10px;" allowfullscreen="true" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- location End -->
+    <!-- FAQ Start -->
+    <div class="container-fluid py-5 mb-5">
+        <div class="container">
+            <div class="text-center mx-auto mt-5">
+                <p class="font-poppins fs-6 text-uppercase text-dark wow fadeInRight" data-wow-delay="0.4s"
+                    style="letter-spacing: 5px;">Frequently Asked Questions</p>
+                <h1 class="display-6 mb-5 font-poppins fw-bold wow fadeInLeft" data-wow-delay="0.5s"
+                    style="background: linear-gradient(to right, #0A3C83, #3C7DDC); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    What Do You Need Help With?</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="accordion" id="faqAccordion">
+                        <hr>
+                        <div class="accordion-item wow fadeInDown border-0" style="color: #4E5356;"
+                            data-wow-delay="0.1s">
+                            <h4 class="accordion-header" id="headingOne">
+                                <p class="accordion p-3 d-flex justify-content-between align-items-center font-poppins"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="false" aria-controls="collapseOne">
+                                    What services do you offer?
+                                    <i class="fas fa-solid fa-plus fs-5 text-success"></i>
+                                </p>
+                            </h4>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body font-poppins">
+                                    We offer a wide range of services including web development, mobile app development,
+                                    cloud solutions, and digital marketing. Our team of experts is dedicated to
+                                    delivering high-quality solutions tailored to your specific needs.
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="accordion-item wow fadeInRight border-0" style="color: #4E5356;"
+                            data-wow-delay="0.2s">
+                            <h4 class="accordion-header" id="headingTwo">
+                                <p class="accordion p-3 d-flex justify-content-between align-items-center font-poppins"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    How long does a typical project take?
+                                    <i class="fas fa-solid fa-plus fs-5 text-success"></i>
+                                </p>
+                            </h4>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body font-poppins">
+                                    Project timelines vary depending on the scope and complexity of the work. We provide
+                                    detailed project plans and timelines during the initial consultation. Our team works
+                                    efficiently to deliver projects on time without compromising quality.
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="accordion-item wow fadeInLeft border-0" style="color: #4E5356;"
+                            data-wow-delay="0.3s">
+                            <h4 class="accordion-header" id="headingThree">
+                                <p class="accordion p-3 d-flex justify-content-between align-items-center font-poppins"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    Do you offer support after project completion?
+                                    <i class="fas fa-solid fa-plus fs-5 text-success"></i>
+                                </p>
+                            </h4>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body font-poppins">
+                                    Yes, we provide ongoing support and maintenance for all our projects. We offer
+                                    various support packages to ensure your solution remains up-to-date and functions
+                                    smoothly long after the initial deployment.
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="accordion-item wow fadeInUp border-0" style="color: #4E5356;" data-wow-delay="0.4s">
+                            <h4 class="accordion-header" id="headingFour">
+                                <p class="accordion p-3 d-flex justify-content-between align-items-center font-poppins"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                    aria-expanded="false" aria-controls="collapseFour">
+                                    How do you ensure the security of my data?
+                                    <i class="fas fa-solid fa-plus fs-5 text-success"></i>
+                                </p>
+                            </h4>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body font-poppins">
+                                    We take data security very seriously. We implement industry-standard security
+                                    measures, including encryption, secure coding practices, and regular security
+                                    audits. We also comply with relevant data protection regulations to ensure your data
+                                    remains safe and confidential.
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-success btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+</div>
+{% endblock content %}
+
+{% block js %}
+
+{% endblock js %}

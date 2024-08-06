@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}| Case Study 1{% endblock title %}
+{% block css %}
+
+{% endblock css %}
+
+{% block content %}
+<div class="content">
+    <!-- header Start -->
+    <div class="container-fluid team d-flex justify-content-center align-items-center">
+        <div class="row py-5">
+            <div class="wow fadeInRight d-flex justify-content-center align-items-center" data-wow-delay="0.3s">
+                <div class="team-item">
+                    <div class="team-img rounded">
+                        <img src="{% static 'media/case-study-profile.png' %}" class="img-fluid" alt="">
+                        <div class="team-icon d-flex justify-content-center align-items-center py-5">
+                            <div class="img-content-hover text-center text-light py-5">
+                                <p class="fw-bold fs-2">Improving Supply Chain Management with SAP Solutions</p>
+                                <p>Lorem ipsum dolor sit amet consectetur. Sit accumsan eget diam aliquam quis eu
+                                    libero. Aliquet facilisis faucibus gravida pharetra enim cras risus eget
+                                    scelerisque.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5 wow fadeInLeft" data-wow-delay="0.3s">
+                <h1>Problem Statement</h1>
+                <p>
+                    The XYZ Company, a leading manufacturing company, was struggling to manage its business
+                    operations effectively. The company's existing system was unable to integrate and
+                    streamline the business processes across departments and locations, resulting in silos
+                    and data inconsistencies. The manual processes and lack of real-time visibility into
+                    business operations were leading to increased costs, delayed decision-making, and
+                    decreased productivity. Hence, the company was looking for a comprehensive solution that
+                    could help them optimize their business processes, improve collaboration and data
+                    accuracy, and enhance overall efficiency and productivity.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- header End -->
+    <!-- client profile start -->
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <h1 class="font-poppins fw-bold text-secondary wow fadeInRight" data-wow-delay="0.3s">Client Profile
+                </h1>
+                <p class="font-poppins text-secondary wow fadeInLeft" data-wow-delay="0.4s">XYZ Company is a leading
+                    manufacturer of industrial equipment, with multiple locations worldwide. The company has been in
+                    the industry for over three decades and has a strong reputation for delivering high-quality
+                    products and exceptional customer service. With a global customer base, the company faced
+                    challenges in managing its business operations efficiently, leading to increased costs and
+                    decreased productivity.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center ">
+                <div class="about-item position-relative wow fadeInRight" data-wow-delay="0.5s">
+                    <img src="{% static 'media/about-vector-2.png' %}" alt="Background Vector 2"
+                        class="position-absolute bottom-0 start-0 w-20 mb-5 " style="z-index: 1;">
+                    <img src="{% static 'media/case-study-profile1.png' %}" alt="Case Study Profile Image"
+                        class="position-relative col-sm-12" style="z-index: 2;">
+                    <img src="{% static 'media/about-vector-1.png' %}" alt="Background Vector 1"
+                        class="position-absolute top-0 end-0 w-20" style="z-index: 1;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- client profile end -->
+    <!-- solution start -->
+    <div class="container-fluid wow fadeInDown position-relative" data-wow-delay="0.2s"
+        style="background: linear-gradient(to right, #101720, #043172, #07172F); height: 50vh; margin-bottom: 30vh;">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="container bg-light rounded p-5 wow fadeInUp shadow p-3" data-wow-delay="0.3s"
+                        style="margin-top: 10vh; height: 60vh; width: 100vh;">
+                        <h1 class="text-secondary">Solution</h1>
+                        <p class="text-secondary">After a detailed assessment of the company's requirements, SAP
+                            recommended the implementation
+                            of an integrated solution that could streamline the company's business processes and improve
+                            collaboration and data accuracy across departments and locations. The SAP solution included
+                            Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), and Supply Chain
+                            Management (SCM) modules. The ERP module provided real-time visibility into business
+                            operations and helped the company optimize its business processes, resulting in improved
+                            efficiency and reduced costs. The CRM module enabled the company to manage its customer
+                            interactions and sales processes effectively, leading to increased customer satisfaction and
+                            revenue growth. The SCM module helped the company optimize its supply chain operations and
+                            improve delivery times, resulting in improved customer satisfaction and increased revenue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- solution end -->
+    <!-- benefits start -->
+    <div class="container-fluid py-5">
+        <div class="container d-flex justify-content-center align-items-center py-5">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <h1 class="font-poppins fw-bold text-secondary wow fadeInRight" data-wow-delay="0.3s">Benefits</h1>
+                <p class="text-secondary">The implementation of the SAP solution helped the company achieve significant
+                    benefits,
+                    including:</p>
+                <p class="text-secondary">1. Improved Business Processes</p>
+                <p class="text-secondary">2. Enhanced Collaboration and Data Accuracy</p>
+                <p class="text-secondary">3. Increased Customer Satisfaction</p>
+                <p class="text-secondary">4. Improved Supply Chain Operations</p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="counter-counting row d-flex align-items-center justify-content-evenly text-wrap g-5">
+                        <div class="col-sm-6 wow fadeInDown" data-wow-delay="0.3s">
+                            <div class="count mb-2 mt-3 text-center">
+                                <span class="text-success fs-1 fw-bold" data-toggle="counter-up">30</span>
+                                <span class="fw-bold fs-1 fw-bold text-success">%</span>
+                            </div>
+                            <div class="text">
+                                <p class="text-secondary fs-6 fw-bold text-center">Reduction in operational costs
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="count mb-2 text-center">
+                                <span class="text-success fs-1 fw-bold" data-toggle="counter-up">20</span>
+                                <span class="fw-bold fs-1 fw-bold text-success">%</span>
+                            </div>
+                            <div class="text">
+                                <p class="text-secondary fs-6 fw-bold text-center">Increase in <br> productivity
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeInDown" data-wow-delay="0.3s">
+                            <div class="count mb-2 text-center">
+                                <span class="text-success fs-1 fw-bold" data-toggle="counter-up">15</span>
+                                <span class="fw-bold fs-1 fw-bold text-success">%</span>
+                            </div>
+                            <div class="text">
+                                <p class="text-secondary fs-6 fw-bold text-center">Increase in <br> customer <br>
+                                    satisfaction
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="count mb-2 text-center">
+                                <span class="text-success fs-1 fw-bold" data-toggle="counter-up">25</span>
+                                <span class="fw-bold fs-1 fw-bold text-success">%</span>
+                            </div>
+                            <div class="text">
+                                <p class="text-secondary fs-6 fw-bold text-center">Increase in revenue growth
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- benefits end -->
+    </div>
+    <!-- benefits end -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-success btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+    
+</div>
+{% endblock content %}
+
+{% block js %}
+
+{% endblock js %}

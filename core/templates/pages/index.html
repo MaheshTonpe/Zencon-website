@@ -1,0 +1,865 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}| Home{% endblock title %}
+{% block css %}
+
+{% endblock css %}
+
+{% block content %}
+<!-- Carousel Start -->
+<div class="content">
+
+	<!-- Spinner Start -->
+	<div id="spinner"
+		class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+		<div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	<!-- Spinner End -->
+
+	<div class="header-carousel-item position-relative d-flex justify-content-center col-lg-12 col-md-12 col-sm-12"
+		style="background: linear-gradient(to right, #101720, #043172, #07172F); height: 100vh;">
+
+		<div class="container-fluid px-0 px-lg-4 py-lg-0 wow fadeInLeft" data-wow-delay="0.2s"
+			style="background-image: url('{% static 'media/polygonVecotor.png' %}'); background-size: cover; background-position: center; height: 100vh; position: relative;">
+			<div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row g-4 align-items-start mt-5">
+							<div class="col-lg-6 d-flex justify-content-center mt-5">
+								<div class="text-sm-center text-md-start">
+									<p class="display-6 text-white text-start fw-bold mb-4 mt-5">Unlock your true
+										potential – <br> Build intelligent enterprise <br> with SAP S/4 Hana
+									</p>
+									<div class="d-flex justify-content-center align-items-center flex-shrink-0 mb-4">
+										<a class="btn btn-success rounded-pill py-2 px-4 px-md-5 ms-2" href="#">Learn
+											More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="carousel-img"
+									style="height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+									<img src="{% static 'media/home.png' %}" class="d-block img-fluid"
+										style="max-height: 200vh; width: 120vh; max-width: 100%; object-fit: contain;"
+										alt="Home image">
+									<div class="hexagon-container d-flex justify-content-around"
+										style=" width: 75%; margin-top: -50px;">
+										<div class="hexagon bg-light d-flex flex-column align-items-center justify-content-center"
+											style="width: 115px; height: 100px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
+											<div
+												class="counter-counting d-flex align-items-center justify-content-center">
+												<span class="text-success fs-3 fw-bold"
+													data-toggle="counter-up">34</span>
+												<span class="fw-bold text-success">+</span>
+											</div>
+											<p class="mb-3 text-dark text-center text-small">Happy Customers</p>
+										</div>
+										<div class="hexagon bg-light d-flex align-items-center flex-column"
+											style="width: 115px; height: 100px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
+											<div
+												class="counter-counting d-flex align-items-center justify-content-center">
+												<span class="text-success fs-3 fw-bold"
+													data-toggle="counter-up">50</span>
+												<span class="fw-bold text-success">+</span>
+											</div>
+											<p class="mb-3 text-dark text-center text-small">Project Deliveries</p>
+										</div>
+										<div class="hexagon bg-light d-flex align-items-center flex-column"
+											style="width: 115px; height: 100px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
+											<div
+												class="counter-counting d-flex align-items-center justify-content-center">
+												<span class="text-success fs-3 fw-bold"
+													data-toggle="counter-up">7</span>
+												<span class="fw-bold text-success">+</span>
+											</div>
+											<p class="mb-3 text-dark text-center text-small">Years of Experience</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row g-4 align-items-start mt-5">
+							<div class="col-lg-6 d-flex justify-content-center mt-5">
+								<div class="text-sm-center text-md-start">
+									<p class="display-6 text-white text-center fw-bold mb-4 mt-5">Minimize business
+										disruptions, maximize ROI – Leverage our SAP AMS service to harness the
+										full potential of SAP ERP
+									</p>
+									<div class="d-flex justify-content-center align-items-center flex-shrink-0 mb-4">
+										<a class="btn btn-success rounded-pill py-2 px-4 px-md-5 ms-2" href="#">Learn
+											More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="carousel-img"
+									style="height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+									<img src="{% static 'media/home.png' %}" class="d-block img-fluid"
+										style="max-height: 200vh; width: 120vh; max-width: 100%; object-fit: contain;"
+										alt="Home image">
+									<div class="hexagon-container d-flex justify-content-around"
+										style=" width: 75%; margin-top: -50px;">
+										<div class="hexagon bg-light d-flex flex-column align-items-center justify-content-center"
+											style="width: 115px; height: 100px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
+											<div
+												class="counter-counting d-flex align-items-center justify-content-center">
+												<span class="text-success fs-3 fw-bold"
+													data-toggle="counter-up">34</span>
+												<span class="fw-bold text-success">+</span>
+											</div>
+											<p class="mb-3 text-dark text-center text-small">Happy Customers</p>
+										</div>
+										<div class="hexagon bg-light d-flex align-items-center flex-column"
+											style="width: 115px; height: 100px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
+											<div
+												class="counter-counting d-flex align-items-center justify-content-center">
+												<span class="text-success fs-3 fw-bold"
+													data-toggle="counter-up">50</span>
+												<span class="fw-bold text-success">+</span>
+											</div>
+											<p class="mb-3 text-dark text-center text-small">Project Deliveries</p>
+										</div>
+										<div class="hexagon bg-light d-flex align-items-center flex-column"
+											style="width: 115px; height: 100px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
+											<div
+												class="counter-counting d-flex align-items-center justify-content-center">
+												<span class="text-success fs-3 fw-bold"
+													data-toggle="counter-up">7</span>
+												<span class="fw-bold text-success">+</span>
+											</div>
+											<p class="mb-3 text-dark text-center text-small">Years of Experience</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row g-4 align-items-start mt-5">
+							<div class="col-lg-6 d-flex justify-content-center mt-5">
+								<div class="text-sm-center text-md-start">
+									<p class="display-6 text-white text-center fw-bold mb-4 mt-5">Power your enterprise
+										with <br> Real time insights and improved <br> decision making through
+										seamless integration with IIOT, RFID, <br> QR and Bar code
+									</p>
+									<div class="d-flex justify-content-center align-items-center flex-shrink-0 mb-4">
+										<a class="btn btn-success rounded-pill py-2 px-4 px-md-5 ms-2" href="#">Learn
+											More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="carousel-img"
+									style="height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+									<img src="{% static 'media/home.png' %}" class="d-block img-fluid"
+										style="max-height: 200vh; width: 120vh; max-width: 100%; object-fit: contain;"
+										alt="Home image">
+									<div class="hexagon-container d-flex justify-content-around"
+										style=" width: 75%; margin-top: -50px;">
+										<div class="hexagon bg-light d-flex flex-column align-items-center justify-content-center"
+											style="width: 115px; height: 100px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
+											<div
+												class="counter-counting d-flex align-items-center justify-content-center">
+												<span class="text-success fs-3 fw-bold"
+													data-toggle="counter-up">34</span>
+												<span class="fw-bold text-success">+</span>
+											</div>
+											<p class="mb-3 text-dark text-center text-small">Happy Customers</p>
+										</div>
+										<div class="hexagon bg-light d-flex align-items-center flex-column"
+											style="width: 115px; height: 100px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
+											<div
+												class="counter-counting d-flex align-items-center justify-content-center">
+												<span class="text-success fs-3 fw-bold"
+													data-toggle="counter-up">50</span>
+												<span class="fw-bold text-success">+</span>
+											</div>
+											<p class="mb-3 text-dark text-center text-small">Project Deliveries</p>
+										</div>
+										<div class="hexagon bg-light d-flex align-items-center flex-column"
+											style="width: 115px; height: 100px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
+											<div
+												class="counter-counting d-flex align-items-center justify-content-center">
+												<span class="text-success fs-3 fw-bold"
+													data-toggle="counter-up">7</span>
+												<span class="fw-bold text-success">+</span>
+											</div>
+											<p class="mb-3 text-dark text-center text-small">Years of Experience</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row g-4 align-items-start mt-5">
+							<div class="col-lg-6 d-flex justify-content-center mt-5">
+								<div class="text-sm-center text-md-start">
+									<p class="display-6 text-white text-center fw-bold mb-4 mt-5">Achieve accelerated
+										value <br> and quicker time to market – <br> Deploy our pre-engineered <br> SAP
+										solutions .
+									</p>
+									<div class="d-flex justify-content-center align-items-center flex-shrink-0 mb-4">
+										<a class="btn btn-success rounded-pill py-2 px-4 px-md-5 ms-2" href="#">Learn
+											More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="carousel-img"
+									style="height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+									<img src="{% static 'media/home.png' %}" class="d-block img-fluid"
+										style="max-height: 200vh; width: 120vh; max-width: 100%; object-fit: contain;"
+										alt="Home image">
+									<div class="hexagon-container d-flex justify-content-around"
+										style=" width: 75%; margin-top: -50px;">
+										<div class="hexagon bg-light d-flex flex-column align-items-center justify-content-center"
+											style="width: 115px; height: 100px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
+											<div
+												class="counter-counting d-flex align-items-center justify-content-center">
+												<span class="text-success fs-3 fw-bold"
+													data-toggle="counter-up">34</span>
+												<span class="fw-bold text-success">+</span>
+											</div>
+											<p class="mb-3 text-dark text-center text-small">Happy Customers</p>
+										</div>
+										<div class="hexagon bg-light d-flex align-items-center flex-column"
+											style="width: 115px; height: 100px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
+											<div
+												class="counter-counting d-flex align-items-center justify-content-center">
+												<span class="text-success fs-3 fw-bold"
+													data-toggle="counter-up">50</span>
+												<span class="fw-bold text-success">+</span>
+											</div>
+											<p class="mb-3 text-dark text-center text-small">Project Deliveries</p>
+										</div>
+										<div class="hexagon bg-light d-flex align-items-center flex-column"
+											style="width: 115px; height: 100px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
+											<div
+												class="counter-counting d-flex align-items-center justify-content-center">
+												<span class="text-success fs-3 fw-bold"
+													data-toggle="counter-up">7</span>
+												<span class="fw-bold text-success">+</span>
+											</div>
+											<p class="mb-3 text-dark text-center text-small">Years of Experience</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="btn-group position-absolute start-0 bottom-0 mb-3 ms-3">
+						<button class="btn btn-success rounded-circle me-2" style="width: 40px; height: 40px;"
+							type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+							<i class="fas fa-arrow-left"></i>
+						</button>
+						<button class="btn btn-success rounded-circle" style="width: 40px; height: 40px;" type="button"
+							data-bs-target="#headerCarousel" data-bs-slide="next">
+							<i class="fas fa-arrow-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Carousel End -->
+	<!-- Feature Start -->
+	<div class="container-fluid feature bg-light py-5">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+					<h1 class="display-5 fw-bold"
+						style="background: linear-gradient(to right, #0A3C83, #3C7DDC); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+						Transforming businesses with <br> tailored
+						technology solutions</h1>
+					<p class="py-5 text-secondary fs-5">Zencon puts you and your team first. Our people-centric
+						approach
+						<br> means our customers are
+						at the heart of everything we do. We <br> specialize in delivering innovative solutions that
+						help
+						businesses <br> achieve their goals. Our focus is on delivering results, and our <br>
+						solutions
+						are
+						designed
+						to provide businesses with the tools they <br> need to streamline operations and improve
+						efficiency.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Feature End -->
+	<!-- Service Start -->
+	<div class="container-fluid team">
+		<div class="row g-4 p-5">
+			<h1 class="text-center mx-auto wow fadeInRight display-5 fw-bold" data-wow-delay="0.2s"
+				style="background: linear-gradient(to right, #0A3C83, #3C7DDC); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+				Our Service Offerings</h1>
+			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInRight" data-wow-delay="0.3s">
+				<div class="team-item">
+					<div class="team-img rounded">
+						<img src="{% static 'media/sol-1.png' %}" class="img-fluid" alt="">
+						<div class="team-icon">
+							<div
+								class="img-content-hover d-flex flex-column justify-content-center align-items-center h-100">
+								<p class="text-center text-light fw-bold mb-3">SAP Managed Services,S/4
+									Implementation
+								</p>
+								<a href="#" class="btn btn-success btn-sm">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+				<div class="team-item">
+					<div class="team-img rounded">
+						<img src="{% static 'media/sol-2.png' %}" class="img-fluid" alt="">
+						<div class="team-icon">
+							<div
+								class="img-content-hover d-flex flex-column justify-content-center align-items-center h-100">
+								<p class="text-center text-light fw-bold mb-3">Business Process Automation</p>
+								<a href="#" class="btn btn-success btn-sm">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInDown" data-wow-delay="0.3s">
+				<div class="team-item">
+					<div class="team-img rounded">
+						<img src="{% static 'media/sol-3.png' %}" class="img-fluid" alt="">
+						<div class="team-icon">
+							<div
+								class="img-content-hover d-flex flex-column justify-content-center align-items-center h-100">
+								<p class="text-center text-light fw-bold mb-3">Collaboration Portal</p>
+								<a href="#" class="btn btn-success btn-sm">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay="0.3s">
+				<div class="team-item">
+					<div class="team-img rounded">
+						<img src="{% static 'media/sol-4.png' %}" class="img-fluid" alt="">
+						<div class="team-icon">
+							<div
+								class="img-content-hover d-flex flex-column justify-content-center align-items-center h-100">
+								<p class="text-center text-light fw-bold mb-3">GST, E invoice SAP Solutions</p>
+								<a href="#" class="btn btn-success btn-sm">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInRight" data-wow-delay="0.5s">
+				<div class="team-item">
+					<div class="team-img rounded">
+						<img src="{% static 'media/sol-5.png' %}" class="img-fluid" alt="">
+						<div class="team-icon">
+							<div
+								class="img-content-hover d-flex flex-column justify-content-center align-items-center h-100">
+								<p class="text-center text-light fw-bold mb-3">Customized ERP</p>
+								<a href="#" class="btn btn-success btn-sm">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+				<div class="team-item">
+					<div class="team-img rounded">
+						<img src="{% static 'media/sol-6.png' %}" class="img-fluid" alt="">
+						<div class="team-icon">
+							<div
+								class="img-content-hover d-flex flex-column justify-content-center align-items-center h-100">
+								<p class="text-center text-light fw-bold mb-3">Document Management</p>
+								<a href="#" class="btn btn-success btn-sm">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInDown" data-wow-delay="0.5s">
+				<div class="team-item">
+					<div class="team-img rounded">
+						<img src="{% static 'media/sol-7.png' %}" class="img-fluid" alt="">
+						<div class="team-icon">
+							<div
+								class="img-content-hover d-flex flex-column justify-content-center align-items-center h-100">
+								<p class="text-center text-light fw-bold mb-3">Smart Value Chain</p>
+								<a href="#" class="btn btn-success btn-sm">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay="0.5s">
+				<div class="team-item">
+					<div class="team-img rounded">
+						<img src="{% static 'media/sol-8.png' %}" class="img-fluid" alt="">
+						<div class="team-icon">
+							<div
+								class="img-content-hover d-flex flex-column justify-content-center align-items-center h-100">
+								<p class="text-center text-light fw-bold mb-3">Digital Signature</p>
+								<a href="#" class="btn btn-success btn-sm">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid position-relative py-5">
+				<img src="{% static 'media/blue-line.png' %}" class="img-fluid w-100 wow fadeInRight"
+					data-wow-delay="0.3s" alt="Background Image">
+				<div class="position-absolute top-50 start-50 translate-middle text-center w-100">
+					<div class="row justify-content-center">
+						<div class="col-lg-8 col-md-10">
+							<h2 class="text-white fw-bold font-poppins mb-4 wow fadeInLeft" data-wow-delay="0.3s">
+								Take the first step towards digital <br> transformation with our SAP solutions
+							</h2>
+							<p class="text-white font-poppins mb-4 wow fadeInRight" data-wow-delay="0.3s">
+								Contact us now to learn how SAP can help your business
+							</p>
+							<a class="btn btn-success rounded-pill py-2 px-4 px-md-5 wow fadeInLeft"
+								data-wow-delay="0.3s" href="#contact-us-section">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Service End -->
+	<!-- Testimonial Start -->
+	<div class="container-fluid" style="background: linear-gradient(to right, #FAFCFE 70%, #DEEBF1 30%);">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0.2s">
+					<div class="heading fs-6 fw-bold font-poppins text-uppercase mt-5 mb-5"
+						style="color: #585C5F; letter-spacing: 5px;">
+						<p>Testimonials</p>
+					</div>
+					<div class="title pt-5 text-start font-poppins  wow fadeInL" data-wow-delay="0.2s">
+						<h1 class="font-poppins fw-bold"
+							style="background: linear-gradient(to right, #0A3C83, #3C7DDC); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+							What our clients say</h1>
+						<p class="font-poppins" style="color: #7A878F;">
+							Zencon has successfully worked with over 50+ <br>
+							clients across various industries, including <br>
+							manufacturing, agrotech, and finance.</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 p-5 wow fadeInRight" data-wow-delay="0.2s">
+					<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="container bg-light font-poppins p-5 wow fadeInRight" data-wow-delay="0.2s">
+									<div class="d-flex align-items-center mb-4">
+										<img src="{% static 'media/profile.png' %}" class="img-fluid rounded-circle"
+											alt="" style="width: 80px; height: 80px; object-fit: cover;">
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur. Mi fames id enim sed enim ut magnis.
+										Ipsum nibh
+										felis volutpat id tristique interdum. Rutrum felis donec nibh tincidunt dui
+										faucibus dictum.
+										Feugiat viverra faucibus id pellentesque lorem. Dis blandit consequat erat
+										viverra vitae in
+										dictumst vitae. Fusce sed dui purus urna. Gravida elit commodo nulla
+										sagittis. Bibendum nisl
+										sed urna neque. Aliquam eget faucibus
+									</p>
+									<h5 class="mb-1 mt-5">John Doe</h5>
+									<p class="text-muted mb-0">CEO, XYZ Technologies</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="container bg-light font-poppins p-5">
+									<div class="d-flex align-items-center mb-4">
+										<img src="{% static 'media/team-2.png' %}" class="img-fluid rounded-circle"
+											alt="" style="width: 80px; height: 80px; object-fit: cover;">
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur. Mi fames id enim sed enim ut magnis.
+										Ipsum nibh
+										felis volutpat id tristique interdum. Rutrum felis donec nibh tincidunt dui
+										faucibus dictum.
+										Feugiat viverra faucibus id pellentesque lorem. Dis blandit consequat erat
+										viverra vitae in
+										dictumst vitae. Fusce sed dui purus urna. Gravida elit commodo nulla
+										sagittis. Bibendum nisl
+										sed urna neque. Aliquam eget faucibus
+									</p>
+									<h5 class="mb-1 mt-5">Ralph Edwards</h5>
+									<p class="text-muted mb-0">CTO, ABC Corporation</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="container bg-light font-poppins p-5">
+									<div class="d-flex align-items-center mb-4">
+										<img src="{% static 'media/team-1.png' %}" class="img-fluid rounded-circle"
+											alt="" style="width: 80px; height: 80px; object-fit: cover;">
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur. Mi fames id enim sed enim ut magnis.
+										Ipsum nibh
+										felis volutpat id tristique interdum. Rutrum felis donec nibh tincidunt dui
+										faucibus dictum.
+										Feugiat viverra faucibus id pellentesque lorem. Dis blandit consequat erat
+										viverra vitae in
+										dictumst vitae. Fusce sed dui purus urna. Gravida elit commodo nulla
+										sagittis. Bibendum nisl
+										sed urna neque. Aliquam eget faucibus
+									</p>
+									<h5 class="mb-1 mt-5">Arlene McCoy</h5>
+									<p class="text-muted mb-0">CFO, DEF Industries</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex justify-content-end mt-3">
+						<button class="btn btn-success rounded-circle me-2" style="width: 40px; height: 40px;"
+							type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+							<i class="fas fa-chevron-left"></i>
+						</button>
+						<button class="btn btn-success rounded-circle" style="width: 40px; height: 40px;" type="button"
+							data-bs-target="#testimonialCarousel" data-bs-slide="next">
+							<i class="fas fa-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Testimonial End -->
+
+	<!-- why Zencon -->
+	<div class="container-fluid py-5">
+		<div class="container">
+			<h1 class="font-poppins fw-bold mt-5 text-center wow fadeInDown" data-wow-delay="0.2s"
+				style="background: linear-gradient(to right, #0A3C83, #3C7DDC); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+				Why Zencon ?
+			</h1>
+			<div class="row p-5">
+				<div class="col-lg-6 col-md-6 mb-4 wow fadeInLeft" data-wow-delay="0.3s">
+					<div class="card h-100 shadow p-3 border-0">
+						<div class="card-body">
+							<div class="d-flex align-items-center mb-3">
+								<img src="{% static 'media/Group-1.png' %}" alt="" class="me-3">
+								<div>
+									<h5 class="card-title mb-2 text-wrap font-poppins" style="color: #008738;">
+										Customer
+										satisfaction
+									</h5>
+									<p class="card-text mb-0 text-wrap font-poppins text-secondary">Customer
+										satisfaction is our top
+										priority. We work closely with our clients to understand their unique needs
+										and
+										provide solutions that align with their business goals.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 mb-4 wow fadeInRight" data-wow-delay="0.3s">
+					<div class="card h-100 shadow p-3 border-0">
+						<div class="card-body">
+							<div class="d-flex align-items-center mb-3">
+								<img src="{% static 'media/Group-2.png' %}" alt="" class="me-3">
+								<div>
+									<h5 class="card-title mb-2 text-wrap font-poppins" style="color: #FF8540;">
+										Ensure
+										Quality</h5>
+									<p class="card-text mb-0 text-wrap font-poppins text-secondary">At ZENCON
+										INFOTECH,
+										quality is the
+										foundation of everything we do. We meticulously adhere to industry best
+										practices and standards to ensure delivering sustainable and quality
+										solutions.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 mb-4 wow fadeInLeft" data-wow-delay="0.4s">
+					<div class="card h-100 shadow p-3 border-0">
+						<div class="card-body">
+							<div class="d-flex align-items-center mb-3">
+								<img src="{% static 'media/Group-3.png' %}" alt="" class="me-3">
+								<div>
+									<h5 class="card-title mb-2 text-wrap font-poppins" style="color: #1483F2;">
+										Outstanding service</h5>
+									<p class="card-text mb-0 text-wrap font-poppins text-secondary">We strive to
+										provide
+										personalized
+										service to each of our clients and are always available to provide support
+										and
+										guidance throughout the project lifecycle.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 mb-4 wow fadeInRight" data-wow-delay="0.4s">
+					<div class="card h-100 shadow p-3 border-0">
+						<div class="card-body">
+							<div class="d-flex align-items-center mb-3">
+								<img src="{% static 'media/Group-4.png' %}" alt="" class="me-3">
+								<div>
+									<h5 class="card-title mb-2 text-wrap font-poppins" style="color: #6349FF;">
+										Excellence</h5>
+									<p class="card-text mb-0 text-wrap font-poppins text-secondary">ZENCON INFOTECH
+										is
+										driven by a
+										passion for excellence. We constantly push the boundaries of what is
+										possible
+										and are committed to delivering innovative solutions</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- why Zencon End -->
+
+	<!-- Contact Us Start -->
+	<div class="container-fluid wow fadeInDown position-relative" data-wow-delay="0.2s"
+		style="background: linear-gradient(to right, #101720, #043172, #07172F);">
+		<div class="container">
+			<div class="row" id="contact-us-section">
+				<div class="col-lg-6 col-md-6 col-sm-12 p-5 mt-5 mb-5">
+					<p class="text-white font-poppins fs-6 text-uppercase wow fadeInLeft" data-wow-delay="0.3s"
+						style="letter-spacing: 3px;">Contact Us</p>
+					<h1 class="text-white font-poppins display-5 fw-bold pb-5 wow fadeInLeft" data-wow-delay="0.4s">
+						Get
+						in Touch</h1>
+					<div class="data mt-5">
+						<div class="d-flex align-items-center mb-3 wow fadeInLeft" data-wow-delay="0.5s">
+							<img src="{% static 'media/visit-us.png' %}" alt="" class="img-fluid me-4">
+							<h5 class="card-title mb-0 text-wrap font-poppins text-white">Visit Us</h5>
+						</div>
+						<div class="d-flex wow fadeInRight" data-wow-delay="0.6s">
+							<p class="card-text mb-0 w-75 pl-5 text-wrap font-poppins text-light">
+								Flat No-102,Anubhti
+								Building
+								16 Pashan Rd Bawdhan Nagar,
+								Bavdhan, Pune, Maharashtra 411021</p>
+						</div>
+					</div>
+					<div class="data mt-5">
+						<div class="d-flex align-items-center mb-3 wow fadeInLeft" data-wow-delay="0.7s">
+							<img src="{% static 'media/call-us.png' %}" alt="" class="img-fluid me-4">
+							<h5 class="card-title mb-0 text-wrap font-poppins text-white">Call Us</h5>
+						</div>
+						<div class="d-flex wow fadeInRight" data-wow-delay="0.8s">
+							<p class="card-text mb-0 w-75 pl-5 d-flex flex-column text-wrap font-poppins">
+								<a href="tel:+91 86 684 36022" class="text-light">+91 86 684 36022</a>
+								<a href="tel:+91 89 755 45838" class="text-light">+91 89 755 45838</a>
+							</p>
+						</div>
+					</div>
+					<div class="data mt-5">
+						<div class="d-flex align-items-center mb-3 wow fadeInLeft" data-wow-delay="0.9s">
+							<img src="{% static 'media/mail-us.png' %}" alt="" class="img-fluid me-4">
+							<h5 class="card-title mb-0 text-wrap font-poppins text-white">Mail Us</h5>
+						</div>
+						<div class="d-flex wow fadeInRight" data-wow-delay="1s">
+							<p class="card-text mb-0 w-75 pl-5 text-wrap font-poppins text-light">
+								<a href="mailto:contact@zencon.com" class="text-light">contact@zencon.com</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 p-5 mt-5 wow fadeInUp" data-wow-delay="0.2s">
+					<div class="row">
+						<div
+							class="col-lg-12 col-md-12 col-sm-12 bg-light p-4 d-flex flex-column justify-content-center">
+							<form action="#" method="post">
+								{% csrf_token %}
+								<div class="mb-3 col-lg-12 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
+									<label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+									<input type="text" class="form-control" id="name" name="name"
+										placeholder="Enter your full name" required>
+								</div>
+								<div class="mb-3 col-lg-12 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="0.4s">
+									<label for="email" class="form-label">Email <span
+											class="text-danger">*</span></label>
+									<input type="email" class="form-control" id="email" name="email"
+										placeholder="Enter your work email address" required>
+								</div>
+								<div class="mb-3 col-lg-12 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.5s">
+									<label for="phone" class="form-label">Phone Number <span
+											class="text-danger">*</span></label>
+									<div class="input-group">
+										<select class="form-select me-3" id="country_code" name="country_code"
+											style="max-width: 100px;">
+											<option value="+1">🇺🇸 +1</option>
+											<option value="+44">🇬🇧 +44</option>
+											<option value="+91">🇮🇳 +91</option>
+											<!-- Add more country options as needed -->
+										</select>
+										<input type="tel" class="form-control" id="phone" name="phone"
+											placeholder="Enter your phone number" required>
+									</div>
+								</div>
+								<div class="mb-3 col-lg-12 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="0.7s">
+									<label for="company" class="form-label">Company</label>
+									<input type="text" class="form-control" id="company" name="company"
+										placeholder="Enter your company name">
+								</div>
+								<div class="mb-3 col-lg-12 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.9s">
+									<label for="country" class="form-label">Country <span
+											class="text-danger">*</span></label>
+									<select class="form-select" id="country" name="country" required>
+										<option value="" selected disabled>Select country</option>
+										<option value="India">India</option>
+										<option value="USA">USA</option>
+										<option value="UK">UK</option>
+										<!-- Add more company options as needed -->
+									</select>
+								</div>
+								<div class="mb-3 col-lg-12 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="1.1s">
+									<label for="message" class="form-label">Message <span
+											class="text-danger">*</span></label>
+									<textarea class="form-control" id="message" name="message" rows="4"
+										placeholder="Your Message" required></textarea>
+								</div>
+								<div class="btn wow fadeInUp" data-wow-delay="1.2s">
+									<button type="submit"
+										class="btn btn-success rounded-pill py-2 px-4 px-md-5 ms-2">Submit</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="position-absolute top-0 end-0 mt-5">
+			<img src="{% static 'media/captcha.png' %}" alt="" class="img-fluid">
+		</div>
+	</div>
+	<!-- Contact Us End -->
+
+	<!-- FAQ Start -->
+	<div class="container-fluid py-5 mb-5">
+		<div class="container">
+			<div class="text-center mx-auto mt-5">
+				<p class="font-poppins fs-6 text-uppercase text-dark wow fadeInRight" data-wow-delay="0.4s"
+					style="letter-spacing: 5px;">Frequently Asked Questions</p>
+				<h1 class="display-6 mb-5 font-poppins fw-bold wow fadeInLeft" data-wow-delay="0.5s"
+					style="background: linear-gradient(to right, #0A3C83, #3C7DDC); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+					What Do You Need Help With?</h1>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="accordion" id="faqAccordion">
+						<hr>
+						<div class="accordion-item wow fadeInDown border-0" style="color: #4E5356;"
+							data-wow-delay="0.1s">
+							<h4 class="accordion-header" id="headingOne">
+								<p class="accordion p-3 d-flex justify-content-between align-items-center font-poppins"
+									type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+									aria-expanded="false" aria-controls="collapseOne">
+									What services do you offer?
+									<i class="fas fa-solid fa-plus fs-5 text-success"></i>
+								</p>
+							</h4>
+							<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+								data-bs-parent="#faqAccordion">
+								<div class="accordion-body font-poppins">
+									We offer a wide range of services including web development, mobile app
+									development,
+									cloud solutions, and digital marketing. Our team of experts is dedicated to
+									delivering high-quality solutions tailored to your specific needs.
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="accordion-item wow fadeInRight border-0" style="color: #4E5356;"
+							data-wow-delay="0.2s">
+							<h4 class="accordion-header" id="headingTwo">
+								<p class="accordion p-3 d-flex justify-content-between align-items-center font-poppins"
+									type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+									aria-expanded="false" aria-controls="collapseTwo">
+									How long does a typical project take?
+									<i class="fas fa-solid fa-plus fs-5 text-success"></i>
+								</p>
+							</h4>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+								data-bs-parent="#faqAccordion">
+								<div class="accordion-body font-poppins">
+									Project timelines vary depending on the scope and complexity of the work. We
+									provide
+									detailed project plans and timelines during the initial consultation. Our team
+									works
+									efficiently to deliver projects on time without compromising quality.
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="accordion-item wow fadeInLeft border-0" style="color: #4E5356;"
+							data-wow-delay="0.3s">
+							<h4 class="accordion-header" id="headingThree">
+								<p class="accordion p-3 d-flex justify-content-between align-items-center font-poppins"
+									type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+									aria-expanded="false" aria-controls="collapseThree">
+									Do you offer support after project completion?
+									<i class="fas fa-solid fa-plus fs-5 text-success"></i>
+								</p>
+							</h4>
+							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+								data-bs-parent="#faqAccordion">
+								<div class="accordion-body font-poppins">
+									Yes, we provide ongoing support and maintenance for all our projects. We offer
+									various support packages to ensure your solution remains up-to-date and
+									functions
+									smoothly long after the initial deployment.
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="accordion-item wow fadeInUp border-0" style="color: #4E5356;" data-wow-delay="0.4s">
+							<h4 class="accordion-header" id="headingFour">
+								<p class="accordion p-3 d-flex justify-content-between align-items-center font-poppins"
+									type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+									aria-expanded="false" aria-controls="collapseFour">
+									How do you ensure the security of my data?
+									<i class="fas fa-solid fa-plus fs-5 text-success"></i>
+								</p>
+							</h4>
+							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+								data-bs-parent="#faqAccordion">
+								<div class="accordion-body font-poppins">
+									We take data security very seriously. We implement industry-standard security
+									measures, including encryption, secure coding practices, and regular security
+									audits. We also comply with relevant data protection regulations to ensure your
+									data
+									remains safe and confidential.
+								</div>
+							</div>
+						</div>
+						<hr>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- FAQ End -->
+
+	<!-- Back to Top -->
+	<a href="#" class="btn btn-success btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+</div>
+
+
+{% endblock content %}
+{% block js %}
+
+{% endblock js %}
